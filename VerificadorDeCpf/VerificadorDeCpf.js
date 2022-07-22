@@ -109,3 +109,4 @@ while (Continue == "S") {
     // Pergunta ao o cliente se ele quer validar outro cpf
     Continue = prompt('Deseja verificar mais um cpf? [S]im ou [N]ao', 'Digite em letra maiúscula')
 }
+// Copie esse código e jogue ele no DevTolls do seu navegador
