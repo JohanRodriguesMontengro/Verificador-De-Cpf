@@ -35,7 +35,7 @@ while (Continue == "S") {
         } else {
             // Caso o if acima não for executado  executa a função abaixo
             Verifier = "N"
-            alert('aguarde um instante para verificarmos')
+            alert('aguarde um instante para verificarmos o seu cpf')
         }
     }
     // Faz o calculo para descobrir o primeiro número depois do "-"
