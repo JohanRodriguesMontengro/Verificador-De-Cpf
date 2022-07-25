@@ -35,7 +35,7 @@ while (Continue == "S") {
         } else {
             // Caso o if acima não for executado  executa a função abaixo
             Verifier = "N"
-            alert('cpf válido, aguarde para verificarmos')
+            alert('aguarde um instante para verificarmos')
         }
     }
     // Faz o calculo para descobrir o primeiro número depois do "-"
@@ -106,7 +106,7 @@ while (Continue == "S") {
     else {
         alert('Seu cpf é falso')
     }
-    // Pergunta ao o cliente se ele quer validar outro cpf
+    // Pergunta ao o cliente se deseja validar outro cpf
     Continue = prompt('Deseja verificar mais um cpf? [S]im ou [N]ao', 'Digite em letra maiúscula')
 }
-// Copie esse código e jogue ele no DevTolls do seu navegador
+// Copie esse código e jogue ele no DevTolls do seu navegador :)
