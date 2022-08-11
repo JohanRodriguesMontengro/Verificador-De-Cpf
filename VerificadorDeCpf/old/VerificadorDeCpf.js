@@ -45,7 +45,7 @@ while (Continue == "S") {
     parseInt(CpfOfClient[4]) * 6 + parseInt(CpfOfClient[5]) * 5 +
     parseInt(CpfOfClient[6]) * 4 + parseInt(CpfOfClient[7]) * 3 +
     parseInt(CpfOfClient[8]) * 2
-    var FirstCalculation = (VerifierOfFirstNumber * 10) % 11 // o simbolo "%" significa o RESTO da divisão 
+    var FirstCalculation = (VerifierOfFirstNumber * 10) % 11 // o simbolo "%" significa o RESTO da divisão
     // Caso o calculo de o resultado de 10 ou maior, nós o consideramos como 0
     if( FirstCalculation >= 10){
         FirstCalculation = 0
