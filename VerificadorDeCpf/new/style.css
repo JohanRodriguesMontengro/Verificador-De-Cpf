@@ -3,11 +3,13 @@ body {
 }
 h2 {
     font-family: 'Roboto';
-    margin-left: 100px;
+    margin-left: 200px;
 }
 h3 {
     font-family: 'Roboto';
     margin-left: 300px;
+    background-color: rgb(179, 179, 179);
+    margin-right: 400px;
 }
 h4 {
     font-family: 'Roboto';
@@ -41,4 +43,6 @@ hr {
     margin-left: 125px;
     margin-right: 125px;
 }
-table
+table {
+    margin-left: 300px;
+}
