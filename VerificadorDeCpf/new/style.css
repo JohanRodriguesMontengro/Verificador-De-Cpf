@@ -1,3 +1,23 @@
 body {
-    background-color: aqua;
+    background-color: rgb(250, 240, 240);
+}
+h2 {
+    font-family: 'Roboto';
+    margin-left: 100px;
+}
+h3 {
+    font-family: 'Roboto';
+    margin-left: 50px;
+}
+h4 {
+    font-family: 'Roboto';
+    margin-left: 400px;
+    font-size: 30px;
+}
+p {
+    font-family: 'Roboto';
+    color: rgb(68, 1, 1);
+}
+a {
+    
 }

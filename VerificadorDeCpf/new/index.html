@@ -6,22 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dicas</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
 </head>
 <body>
-    <h2>O que é "Cpf", e como descobrir se é verdadeiro ou não:</h2>
-    <h3>O que é Cpf?:</h3>
+    <h4>O que é Cpf?:</h4>
     <p>O Cadastro de Pessoa Física é o registro de contribuintes mantido pela Receita Federal do Brasil no qual podem se inscrever, uma única vez, quaisquer pessoas naturais, independentemente de idade ou nacionalidade, inclusive falecidas<br>
-        <hr>
     A principal função é servir de identificação dos contribuintes no Imposto de Renda. A partir de 2019, ele passou a ser obrigatório para dependentes de qualquer idade.
     Mas o CPF não serve só isso. Se você quiser prestar concurso público, abrir conta em banco, pegar empréstimos, financiamentos e cartão de crédito, obter carteira de trabalho e passaporte, vai precisar ter o seu.</p>
     <a href="https://pt.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas">Para mais informações clique aqui!</a>
     <br>
-    <h3>Como descobrir se é verdadeiro ou não?:</h3>
+    <h4>Como descobrir se é verdadeiro ou não?:</h4>
     <p>
         Pelo site da Receita Federal, além de validar os dados de CPF, você poderá consultar qual o nome da respectiva pessoa e sua situação cadastral atual.<br>
         Além dessa também tem outras maneiras de se verificar um cpf
     </p>
-    <h3>1º Forma de validação:</h3>
+    <h4>1º Forma de validação:</h4>
     <p>
         Em <strong>90%</strong> dos casos, esta simples soma dos números do CPF demonstra a veracidade do documento.<br>
             <br>
@@ -90,45 +89,47 @@
         </tbody>
     </table>
     <br>
-    <h3>2º Forma de validação, usando cálculos</h3>
-    <h3>Regra para validar Cpf</h3>
+    <h4>2º Forma de validação, usando cálculos</h4>
     <p>O cálculo para validar um Cpf é especificado pelo <a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaSituacao/ConsultaPublica.asp">Ministério da Fazenda</a>, que disponibiliza no próprio site as <a href="http://www.receita.fazenda.gov.br/aplicacoes/atcta/cpf/funcoes.js">funções</a> (em javascript) para validação de CPF. Vamos entender como funciona.<br>
     O CPF é formado por 11 dígitos numéricos que seguem a máscara "###.###.###-##", a verificação do CPF acontece utilizando os 9 primeiros dígitos e, com um cálculo simples, verificando se o resultado corresponde aos dois últimos dígitos (depois do sinal "-").
     </p>
-    <h4>Vamos usar como exemplo, um CPF fictício "529.982.247-25".</h4>
+    <h3>Vamos usar como exemplo, um CPF fictício "529.982.247-25".</h3>
     <h3>Validação do primeiro dígito:</h3>
     <p>Primeiramente multiplica-se os 9 primeiros dígitos pela sequência decrescente de números de 10 à 2 e soma os resultados. Assim:</p>
-    <h4>5 * 10 + 2 * 9 + 9 * 8 + 9 * 7 + 8 * 6 + 2 * 5 + 2 * 4 + 4 * 3 + 7 * 2</h4>
+    <h3>5 * 10 + 2 * 9 + 9 * 8 + 9 * 7 + 8 * 6 + 2 * 5 + 2 * 4 + 4 * 3 + 7 * 2</h3>
     <p>O resultado do nosso exemplo é:</p>
-    <h4>295</h4>
+    <h3>295</h3>
     <p>O resultado que nos interessa na verdade é o RESTO da divisão. Se ele for igual ao <strong>primeiro dígito verificador</strong> (primeiro dígito depois do '-'), a primeira parte da validação está correta.<br>
         <br>
         <strong>Observação Importante:</strong> Se o resto da divisão for igual a 10, nós o consideramos como 0.<br>
         <br>
         Vamos conferir o primeiro dígito verificador do nosso exemplo:
     </p>
-        <h4>O resultado da divisão acima é '268' e o RESTO é 2</h4>
+        <h3>O resultado da divisão acima é '268' e o RESTO é 2</h3>
         <p>Isso significa que o nosso CPF exemplo passou na validação do primeiro dígito.</p>
-    <h3>Validação do segundo dígito:</h3>
+    <h4>Validação do segundo dígito:</h4>
     <p>A validação do segundo dígito é semelhante à primeira, porém vamos considerar os 9 primeiros dígitos, mais o primeiro dígito verificador, e vamos multiplicar esses 10 números pela sequencia decrescente de 11 a 2. Vejamos:</p>
-    <h4>5 * 11 + 2 * 10 + 9 * 9 + 9 * 8 + 8 * 7 + 2 * 6 + 2 * 5 + 4 * 4 + 7 * 3 + 2 * 2</h4>
+    <h3>5 * 11 + 2 * 10 + 9 * 9 + 9 * 8 + 8 * 7 + 2 * 6 + 2 * 5 + 4 * 4 + 7 * 3 + 2 * 2</h3>
     <p>O resultado é:</p>
-    <h4>347</h4>
+    <h3>347</h3>
     <p>Seguindo o mesmo processo da primeira verificação, multiplicamos por 10 e dividimos por 11.</p>
-    <h4>347 * 10 / 11</h4>
+    <h3>347 * 10 / 11</h3>
     <p>Verificando o RESTO, como fizemos anteriormente, temos:</p>
-    <h4>O resultado da divisão é '315' e o RESTO é 5</h4>
+    <h3>O resultado da divisão é '315' e o RESTO é 5</h3>
     <p>Verificamos, se o resto corresponde ao segundo dígito verificador.<br>
     <br>
     Com essa verificação, constatamos que o CPF 529.982.247-25 é válido.</p>
-    <h3>Cpfs inválidos conhecidos</h3>
+    <h4>Cpfs inválidos conhecidos</h4>
     <p>Existe alguns casos de CPFs que passam nessa validação que expliquei, mas que ainda são inválidos. É os caso dos CPFs com dígitos repetidos (111.111.111-11, 222.222.222-22, ...)<br>
         <br>
         Esses CPF atendem à validação, mas ainda são considerados inválidos.
         <br>
         No nosso algoritmo, vamos verificar se todos os dígitos do CPF são iguais e, neste caso, considerar que ele é inválido.</p>
-    <h2>Algoritmo para validar cpf</h2>
-    <input type="button" value="Teste Aqui!" onclick='var Continue = "S"
+    <h4>Algoritmo para validar cpf</h4>
+    <a href="./novoVerificadorDeCpf.js">Ver algorítimo</a><br><br>
+    <input type="button" value="Teste Aqui!" onclick='
+    // Parte em JavaScript
+    var Continue = "S"
 
     while (Continue == "S") {
         var Verifier = "S"
@@ -222,7 +223,7 @@
             alert(`Seu cpf é falso`)
         }
         Continue = prompt(`Deseja verificar mais um cpf? [S]im ou [N]ao`, `S`)
-    }
+    }// Fim da parte em JavaScript
     ' >
     <p>Agora que já aprendemos como acontece a validação de um CPF, vamos ver como ficaria um algoritmo para validar CPF.Este algoritmo foi criado pelo criador dessa página (Johan), para ver mais algoritmos como esse visite meu GitHub: <a href="https://github.com/JohanRodriguesMontengro">GitHub.Johan</a></p>
     <img src="./FotoCódigo.jpg" alt="" width="1100">
