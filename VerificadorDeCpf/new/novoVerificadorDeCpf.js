@@ -1,4 +1,4 @@
-let Continuar = "S"
+var Continuar = "S"
 
 function cpfOfClient() {
     for(i = 0; i == 0;){
@@ -9,7 +9,10 @@ function cpfOfClient() {
         if(isNaN(cpfOfClient) || cpfOfClient.length != 11 || cpfOfClient == cpfFalse0 || cpfOfClient == cpfFalse1 || cpfOfClient == cpfFalse2 ||cpfOfClient == cpfFalse3 ||cpfOfClient == cpfFalse4 || cpfOfClient == cpfFalse5 ||cpfOfClient == cpfFalse6 ||cpfOfClient == cpfFalse7 || cpfOfClient == cpfFalse8 ||cpfOfClient == cpfFalse9) 
         {
             alert(`Insira somente números`)
-        } else {
+        } else if(cpfOfClient == 'Easter Egg:)') {
+            Continuar = false
+        }
+        else {
             alert(`Aguarde para verificarmos`)
         }
         if(confirmação == true) {
