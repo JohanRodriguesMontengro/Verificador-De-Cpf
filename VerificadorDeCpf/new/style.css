@@ -37,7 +37,8 @@ p {
     margin-left: 50px;
 }
 a {
-    margin-left: 200px;
+    text-decoration: underline;
+    color: black;
 }
 hr {
     margin-left: 125px;
@@ -45,4 +46,7 @@ hr {
 }
 table {
     margin-left: 300px;
+}
+#Link {
+    margin-left: 200px;
 }
