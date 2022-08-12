@@ -34,21 +34,21 @@ while (Continue == "S") {
         }
     }
     var VerifierOfFirstNumber = 
-    parseInt(CpfOfClient[0]) * 10 + parseInt(CpfOfClient[1]) * 9 +
-    parseInt(CpfOfClient[2]) * 8 + parseInt(CpfOfClient[3]) * 7 +
-    parseInt(CpfOfClient[4]) * 6 + parseInt(CpfOfClient[5]) * 5 +
-    parseInt(CpfOfClient[6]) * 4 + parseInt(CpfOfClient[7]) * 3 +
-    parseInt(CpfOfClient[8]) * 2
+    CpfOfClient[0] * 10 + CpfOfClient[1] * 9 +
+    CpfOfClient[2] * 8 + CpfOfClient[3] * 7 +
+    CpfOfClient[4] * 6 + CpfOfClient[5] * 5 +
+    CpfOfClient[6] * 4 + CpfOfClient[7] * 3 +
+    CpfOfClient[8] * 2
     var FirstCalculation = (VerifierOfFirstNumber * 10) % 11 
     if( FirstCalculation >= 10){
         FirstCalculation = 0
     }
-    var VerifierOfSecondNumber = 
-    parseInt(CpfOfClient[0]) * 11 + parseInt(CpfOfClient[1]) * 10 +
-    parseInt(CpfOfClient[2]) * 9 + parseInt(CpfOfClient[3]) * 8 +
-    parseInt(CpfOfClient[4]) * 7 + parseInt(CpfOfClient[5]) * 6 +
-    parseInt(CpfOfClient[6]) * 5 + parseInt(CpfOfClient[7]) * 4 +
-    parseInt(CpfOfClient[8]) * 3 + FirstCalculation * 2
+    var VerifierOfSecondNumber =
+    CpfOfClient[0] * 11 + CpfOfClient[1] * 10 +
+    CpfOfClient[2] * 9 + CpfOfClient[3]* 8 +
+    CpfOfClient[4] * 7 + CpfOfClient[5]* 6 +
+    CpfOfClient[6] * 5 + CpfOfClient[7]* 4 +
+    CpfOfClient[8] * 3 + FirstCalculation * 2
     var SecondCalculation = (VerifierOfSecondNumber * 10) % 11 
 
     if(SecondCalculation >= 10) {
@@ -89,7 +89,7 @@ while (Continue == "S") {
         }
     } 
     else {
-        alert('Seu cpf é falso')
+        alert(`Seu cpf é falso`)
     }
-    Continue = prompt('Deseja verificar mais um cpf? [S]im ou [N]ao', 'S')
+    Continue = prompt(`Deseja verificar mais um cpf? [S]im ou [N]ao`, `S`)
 }
