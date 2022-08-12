@@ -4,19 +4,10 @@ function cpfOfClient() {
     for(i = 0; i == 0;){
         let cpfOfClient = prompt(`Digite seu cpf!`)
         let confirmação = confirm(`O seu cpf é ${cpfOfClient}. Aguardando confirmação`)
-        let universalCpfFalse = {
-            CpfFalse0: 00000000000, 
-            CpfFalse1: 11111111111, 
-            CpfFalse2: 22222222222, 
-            CpfFalse3: 33333333333, 
-            CpfFalse4: 44444444444,
-            CpfFalse5: 55555555555, 
-            CpfFalse6: 66666666666, 
-            CpfFalse7: 77777777777, 
-            CpfFalse8: 88888888888, 
-            CpfFalse9: 99999999999
-        }
-        if(isNaN(cpfOfClient) || cpfOfClient != 11 || cpfOfClient == universalCpfFalse) {
+        var cpfFalse0 = 00000000000, cpfFalse1 = 11111111111, cpfFalse2 = 22222222222, cpfFalse3 = 33333333333, cpfFalse4 = 44444444444,cpfFalse5 = 55555555555, cpfFalse6 = 66666666666, cpfFalse7 = 77777777777, cpfFalse8 = 88888888888, cpfFalse9 = 99999999999
+
+        if(isNaN(cpfOfClient) || cpfOfClient.length != 11 || cpfOfClient == cpfFalse0 || cpfOfClient == cpfFalse1 || cpfOfClient == cpfFalse2 ||cpfOfClient == cpfFalse3 ||cpfOfClient == cpfFalse4 || cpfOfClient == cpfFalse5 ||cpfOfClient == cpfFalse6 ||cpfOfClient == cpfFalse7 || cpfOfClient == cpfFalse8 ||cpfOfClient == cpfFalse9) 
+        {
             alert(`Insira somente números`)
         } else {
             alert(`Aguarde para verificarmos`)
@@ -77,8 +68,8 @@ function Verification() {
               break;
             }
         }
-        while (Continuar == "S") {
-            cpfOfClient()
-            Verification()
-        }
     }
+    while (Continuar == "S") {
+        cpfOfClient()
+        Verification()
+}
