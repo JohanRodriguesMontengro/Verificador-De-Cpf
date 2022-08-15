@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(221, 221, 221);
+}
+h2 {
+    font-family: 'Roboto';
+    margin-left: 200px;
+}
+h3 {
+    font-family: 'Roboto';
+    margin-left: 300px;
+    background-color: rgb(179, 179, 179);
+    margin-right: 400px;
+}
+h4 {
+    font-family: 'Roboto';
+    margin-left: 400px;
+    font-size: 30px;
+    color:rgb(21, 22, 22)
+}
+p {
+    font-family: 'Roboto';
+    color: rgb(68, 1, 1);
+    margin-left: 200px;
+    margin-right: 200px
+}
+.github {
+    margin-left: 300px;
+}
+#Algori {
+    margin-left: 300px;
+}
+.Teste {
+    color: rgb(70, 7, 7);
+    font-family: "Roboto";
+}
+.Algorítimo {
+
+    font-family: "Roboto";
+    margin-left: 300px;
+}
+.Foto {
+    margin-left: 50px;
+}
+a {
+    text-decoration: underline;
+    color: black;
+}
+hr {
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-top: -30px;
+}
+table {
+    margin-left: 300px;
+}
+#Link {
+    margin-left: 200px;
+}
