@@ -23,15 +23,20 @@ p {
     margin-left: 200px;
     margin-right: 200px
 }
+.github {
+    margin-left: 300px;
+}
+#Algori {
+    margin-left: 300px;
+}
 .Teste {
-    color: black;
+    color: rgb(70, 7, 7);
     font-family: "Roboto";
-    margin-left: 500px;
 }
 .Algorítimo {
 
     font-family: "Roboto";
-    margin-left: 500px;
+    margin-left: 300px;
 }
 .Foto {
     margin-left: 50px;
@@ -43,6 +48,7 @@ a {
 hr {
     margin-left: 125px;
     margin-right: 125px;
+    margin-top: -30px;
 }
 table {
     margin-left: 300px;
